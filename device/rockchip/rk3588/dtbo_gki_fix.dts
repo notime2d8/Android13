@@ -1,0 +1,23 @@
+&dmac0 {
+       arm,primecell-periphid = <0x00241330>;
+};
+
+&dmac1 {
+       arm,primecell-periphid = <0x00241330>;
+};
+
+&dmac2 {
+       arm,primecell-periphid = <0x00241330>;
+};
+
+&its0 {
+       status = "disabled";
+};
+
+&its1 {
+       status = "disabled";
+};
+
+&chosen {
+	bootargs_ext = "pci=nomsi pcie_pme=nomsi";
+};
