@@ -1,0 +1,37 @@
+
+#Top Right side key
+key 0x2c0 BACK
+
+# Top Left side key
+key 0x2c1 TV_KEYMOUSE_MODE_SWITCH   
+                
+key 103 DPAD_UP
+key 108 DPAD_DOWN
+key 105 DPAD_LEFT
+key 106 DPAD_RIGHT		              
+
+key 304   BUTTON_A
+key 305   BUTTON_B
+key 307   BUTTON_X
+key 308   BUTTON_Y
+
+key 310   BUTTON_L1
+key 311   BUTTON_R1
+key 312	  BUTTON_L2
+key 313   BUTTON_R2
+
+key 0x158 BUTTON_SELECT
+key 0x125 BUTTON_START
+
+
+
+# Left Analog Stick
+key 0x2c4   BUTTON_THUMBL
+axis 0x00    X flat 32
+axis 0x01    Y flat 32
+
+# Right Analog Stick
+key 0x2c5   BUTTON_THUMBR
+axis 0x0c   Z flat 32
+axis 0x0d   RZ flat 32
+

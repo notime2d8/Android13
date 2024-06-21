@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Do not enable auto rotation switching -->
+    <bool name="def_accelerometer_rotation">true</bool>
+
+    <!-- Disable the lockscreen -->
+    <bool name="def_lockscreen_disabled">true</bool>
+
+    <!-- Decrease animation duration. -->
+    <fraction name="def_window_animation_scale">0%</fraction>
+    <fraction name="def_window_transition_scale">0%</fraction>
+
+    <!-- Do not give up on DHCP -->
+    <integer name="def_max_dhcp_retries">0</integer>
+    
+    <!-- disable network monitoring support -->
+    <bool name="def_netstats_enabled">false</bool>
+
+    <!-- Default screen timeout set when setting screensaver. Currently (15 * 60 * 1000) = 15 min -->
+    <integer name="def_screen_off_timeout">1800000</integer>
+
+    <bool name="def_dim_screen">false</bool>
+    <bool name="def_install_non_market_apps">true</bool>
+    <string name="def_airplane_mode_radios">bluetooth,wifi</string>
+    <string name="airplane_mode_toggleable_radios">bluetooth,wifi</string>
+    <bool name="def_haptic_feedback">false</bool>
+    <integer name="def_screen_brightness">200</integer>
+    <bool name="def_bluetooth_on">false</bool>
+</resources>
