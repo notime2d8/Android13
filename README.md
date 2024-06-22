@@ -11,3 +11,7 @@ Android can then be built following the Khadas instructions or with the commands
 source build/envsetup.sh && lunch
 
 ./build.sh -CUAu    (C-Kernel with Clang, U-U-boot, A-Android, u-update.img)
+
+You can reference Firefly's docs for flashing. 
+
+https://wiki.t-firefly.com/en/ROC-RK3588S-PC/upgrade_firmware.html
