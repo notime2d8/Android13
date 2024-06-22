@@ -1,0 +1,48 @@
+# for cts_gts
+cts_gts.            u:object_r:test_harness_prop:s0
+
+# for Express build
+ro.base_build   u:object_r:exported_default_prop:s0
+ro.boot.noril   u:object_r:debug_prop:s0
+
+# graphic surfaceflinger rk-ext
+persist.sf.mirror.displayid u:object_r:debug_prop:s0
+persist.sf.mirror.x         u:object_r:debug_prop:s0
+persist.sf.mirror.y         u:object_r:debug_prop:s0
+
+#ro.setupwizard.mode         u:object_r:debug_prop:s0
+#ro.com.google.              u:object_r:debug_prop:s0
+
+ro.mem_optimise.enable      u:object_r:debug_prop:s0
+ro.wifi.sleep.power.down    u:object_r:debug_prop:s0
+persist.wifi.sleep.         u:object_r:debug_prop:s0
+persist.bt.sleep.flag       u:object_r:debug_prop:s0
+persist.bt.power.down       u:object_r:debug_prop:s0
+
+ro.factory.     u:object_r:debug_prop:s0
+ro.rk.          u:object_r:debug_prop:s0
+ro.tee.storage  u:object_r:debug_prop:s0
+ro.config.enable.remotecontrol  u:object_r:debug_prop:s0
+ro.sf.lcdc_composer         u:object_r:debug_prop:s0
+ro.rksdk.version        u:object_r:debug_prop:s0
+ro.tether.denied        u:object_r:debug_prop:s0
+ro.safemode.disabled        u:object_r:debug_prop:s0
+
+persist.sys.strictmode.visual   u:object_r:debug_prop:s0
+ril.function.dataonly       u:object_r:debug_prop:s0
+sf.power.control        u:object_r:debug_prop:s0
+sys.resolution.changed      u:object_r:debug_prop:s0
+
+#For TvSettings
+persist.internet_adb_enable      u:object_r:debug_prop:s0
+persist.abc_switch      u:object_r:debug_prop:s0
+persist.vendor.flash_if_path        u:object_r:debug_prop:s0
+persist.vendor.flash_of_path        u:object_r:debug_prop:s0
+
+#fake use 2 otg
+persist.vendor.fake_data_role           u:object_r:debug_prop:s0
+#rk vulkan support
+persist.vendor.rk_vulkan                u:object_r:debug_prop:s0
+
+#For hdmiin tvinput
+tvinput.hdmiin.buff_type    u:object_r:debug_prop:s0
