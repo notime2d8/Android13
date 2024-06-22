@@ -1,0 +1,9 @@
+allow bootanim hwservicemanager:binder call;
+
+allow bootanim audio_service:service_manager find;
+allow bootanim mediametrics_service:service_manager find;
+
+dontaudit bootanim mnt_vendor_file:dir search;
+dontaudit bootanim system_data_file:dir read;
+dontaudit bootanim kernel:system module_request;
+rw_rockchip_graphic_device(bootanim)
