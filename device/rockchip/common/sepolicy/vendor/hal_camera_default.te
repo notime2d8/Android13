@@ -1,0 +1,28 @@
+allow hal_camera_default vndbinder_device:chr_file rw_file_perms;
+allow hal_camera_default hal_graphics_mapper_hwservice:hwservice_manager { find };
+
+allow hal_camera_default hal_graphics_composer_default:fd { use };
+allow hal_camera_default mediaserver:fd { use };
+allow hal_camera_default vendor_data_file:dir { read open write add_name create setattr getattr remove_name rmdir };
+allow hal_camera_default vendor_data_file:file { read open write getattr create};
+allow hal_camera_default sysfs:dir {read open};
+allow hal_camera_default sysfs:file {read open getattr};
+allow hal_camera_default sysfs_camera:file rw_file_perms;
+allow hal_camera_default hal_hdmi_hwservice:hwservice_manager { find };
+
+allow hal_camera_default sysfs_dev:file r_file_perms;
+allow hal_camera_default proc_version:file r_file_perms;
+
+hal_client_domain(hal_camera_default, hal_graphics_allocator)
+binder_call(hal_camera_default,hal_graphics_allocator_default)
+binder_call(hal_camera_default,hal_hdmi_default)
+
+rw_rockchip_graphic_device(hal_camera_default)
+
+# For camera hal to control priority of current process
+allow hal_camera_default self:capability sys_nice;
+
+get_prop(hal_camera_default, vendor_base_prop)
+get_prop(hal_camera_default, vendor_camera_prop)
+get_prop(hal_camera_default, vendor_omx_prop)
+set_prop(hal_camera_default, vendor_camera_prop)

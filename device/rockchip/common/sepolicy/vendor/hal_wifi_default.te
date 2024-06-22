@@ -1,0 +1,15 @@
+allow hal_wifi_default proc_version:file { read open };
+allow hal_wifi_default vendor_file:system module_load;
+allow hal_wifi_default proc_net:file { getattr open read };
+allow hal_wifi_default sysfs:dir { read open };
+allow hal_wifi_default sysfs:file rw_file_perms;
+allow hal_wifi_default proc_modules:file { read open getattr };
+allow hal_wifi_default tombstone_wifi_data_file:dir { read open };
+allow hal_wifi_default kernel:system module_request;
+allow hal_wifi_default self:capability sys_module;
+
+dontaudit hal_wifi_default self:capability { dac_override };
+dontaudit hal_wifi_default wifi_data_file:dir { search };
+
+get_prop(hal_wifi_default, persist_vendor_debug_wifi_prop)
+set_prop(hal_wifi_default, vendor_wifi_prop)

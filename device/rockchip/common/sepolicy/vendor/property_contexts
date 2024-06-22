@@ -1,0 +1,82 @@
+# camera
+persist.vendor.camera.                  u:object_r:vendor_camera_prop:s0
+vendor.cam.                             u:object_r:vendor_camera_prop:s0
+# VTS
+vendor.vts_test                         u:object_r:vendor_vts_status_prop:s0
+# hwc
+vendor.hwc.                             u:object_r:vendor_hwc_prop:s0
+vendor.ghwc.                            u:object_r:vendor_hwc_prop:s0
+# omx
+vendor.use_mpp_mode                     u:object_r:vendor_omx_prop:s0
+vendor.dump.omx.log                     u:object_r:vendor_omx_prop:s0
+vendor.omx.                             u:object_r:vendor_omx_prop:s0
+vendor.mpp_buffer_debug                 u:object_r:vendor_omx_prop:s0
+vendor.mpp_mem_flag                     u:object_r:vendor_omx_prop:s0
+
+# wifi
+vendor.wifi.                            u:object_r:vendor_wifi_prop:s0
+vendor.wlan.                            u:object_r:vendor_wifi_prop:s0
+
+vendor.3d_resolution.                   u:object_r:vendor_system_public_prop:s0
+vendor.dump                             u:object_r:vendor_system_public_prop:s0
+vendor.shutdown_anim.orien              u:object_r:vendor_system_public_prop:s0
+vendor.rga.                             u:object_r:vendor_system_public_prop:s0
+
+persist.vendor.overscan.                u:object_r:vendor_system_public_prop:s0
+persist.vendor.color.                   u:object_r:vendor_system_public_prop:s0
+vendor.display.timeline                 u:object_r:vendor_system_public_prop:s0
+persist.vendor.framebuffer.             u:object_r:vendor_system_public_prop:s0
+persist.vendor.resolution.              u:object_r:vendor_system_public_prop:s0
+persist.vendor.hdcp1x.                  u:object_r:vendor_system_public_prop:s0
+persist.vendor.resolution_white.        u:object_r:vendor_system_public_prop:s0
+persist.vendor.brightness.              u:object_r:vendor_system_public_prop:s0
+persist.vendor.contrast.                u:object_r:vendor_system_public_prop:s0
+persist.vendor.saturation.              u:object_r:vendor_system_public_prop:s0
+persist.vendor.hue.                     u:object_r:vendor_system_public_prop:s0
+persist.vendor.video.cvrs               u:object_r:vendor_system_public_prop:s0
+persist.vendor.saveconfig               u:object_r:vendor_system_public_prop:s0
+vendor.hdmi_status.                     u:object_r:vendor_system_public_prop:s0
+vendor.xxx.                             u:object_r:vendor_system_public_prop:s0
+
+ro.vendor.ethernet_settings             u:object_r:vendor_system_public_prop:s0
+ro.vendor.frameratelock                 u:object_r:vendor_system_public_prop:s0
+ro.vendor.hdmi_settings                 u:object_r:vendor_system_public_prop:s0
+ro.vendor.hdmirotationlock              u:object_r:vendor_system_public_prop:s0
+ro.vendor.mpp_buf_type                  u:object_r:vendor_system_public_prop:s0
+ro.vendor.rk_sdk                        u:object_r:vendor_system_public_prop:s0
+ro.vendor.sdkversion                    u:object_r:vendor_system_public_prop:s0
+
+ro.vendor.udisk.visible                 u:object_r:vendor_base_prop:s0
+
+# cec
+vendor.sys.hdmicec.                     u:object_r:vendor_cec_prop:s0
+
+# sensor
+vendor.sensor.debug.                    u:object_r:vendor_base_prop:s0
+
+# mali
+vendor.gmali.                           u:object_r:vendor_system_public_prop:s0
+
+# gralloc
+vendor.gralloc.                         u:object_r:vendor_system_public_prop:s0
+
+# audio
+vendor.audio                            u:object_r:vendor_system_public_prop:s0
+vendor.boot_completed                   u:object_r:vendor_boot_complete_prop:s0
+
+# for vendor/build.prop
+vendor.all.modules.ready                u:object_r:vendor_system_public_prop:s0
+
+# drmservice
+persist.vendor.sys.hid                  u:object_r:vendor_drmservice_prop:s0
+
+# power aidl configs
+ro.vendor.power.                        u:object_r:vendor_power_prop:s0
+
+persist.vendor.usb.config  u:object_r:vendor_usb_config_prop:s0
+vendor.usb.config          u:object_r:vendor_usb_config_prop:s0
+vendor.usb.                u:object_r:vendor_usb_prop:s0
+persist.vendor.usb.        u:object_r:vendor_usb_prop:s0
+
+persist.vendor.tvinput.   u:object_r:vendor_tv_input_prop:s0
+vendor.tvinput.           u:object_r:vendor_tv_input_prop:s0

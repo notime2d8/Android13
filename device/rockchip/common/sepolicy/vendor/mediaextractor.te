@@ -1,0 +1,2 @@
+allow mediaextractor unlabeled:file { read };
+allow mediaextractor oemfs:file {read};

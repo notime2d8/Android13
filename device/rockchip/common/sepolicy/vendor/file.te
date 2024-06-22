@@ -1,0 +1,16 @@
+# incremental fs driver
+type vendor_incremental_module, vendor_file_type, file_type;
+
+# vendor data file
+type mediadrm_vendor_data_file, file_type, data_file_type;
+type abc_data_file, file_type, data_file_type;
+
+# /sys
+type sysfs_camera, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_hdmi, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_hdmirx, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_dev, fs_type, sysfs_type, mlstrustedobject;
+type fuseblk, sdcard_type, fs_type, mlstrustedobject;
+type debugfs_sw_sync, fs_type, debugfs_type;
+type sysfs_dmc, fs_type, sysfs_type;
+type sysfs_mmc, fs_type, sysfs_type;
