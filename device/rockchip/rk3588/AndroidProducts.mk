@@ -17,9 +17,11 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/nova/nova.mk \
     $(LOCAL_DIR)/ace/ace.mk \
+    $(LOCAL_DIR)/cm5/cm5.mk \    
+    
 
 COMMON_LUNCH_CHOICES := \
     nova-userdebug \
-    nova-user \
+    cm5-userdebug \
     ace-userdebug \
-    ace-user \
+
