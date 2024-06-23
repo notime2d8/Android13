@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device name="Android">
+    <!-- All values are in mAh except as noted -->
+    <item name="none">2.18</item>
+    <item name="screen.on">105</item>
+    <item name="screen.full">262</item>
+    <item name="bluetooth.active">26.47</item>
+    <item name="bluetooth.on">4.05</item>
+    <item name="wifi.on">3.81</item>
+    <item name="wifi.active">111.43</item>
+    <item name="wifi.scan">149.04</item>
+    <item name="audio">0</item> <!-- ~10mA -->
+    <item name="video">0</item> <!-- ~50mA -->
+    
+    <item name="dsp.audio">19.15</item>
+    <item name="dsp.video">113.57</item>
+
+
+
+  <!-- Average current draw (mA) of the Bluetooth controller when idle. -->
+  <item name="bluetooth.controller.idle">2.173</item>
+  <!-- Average current draw (mA) of the Bluetooth controller when receiving. -->
+  <item name="bluetooth.controller.rx">0.331</item>
+  <!-- Average current draw (mA) of the Bluetooth controller when transmitting. -->
+  <item name="bluetooth.controller.tx">8.040</item>
+  <!-- Average operating voltage (mV) of the Bluetooth controller. -->
+  <item name="bluetooth.controller.voltage">0</item>
+  <!-- Bluetooth on & connectable, but not connected -->
+  <item name="bluetooth.on">5</item>
+  <!-- Bluetooth data transfer -->
+  <item name="bluetooth.active">40</item>
+    
+  <!-- Additional power used when Wi-Fi is turned on but not receiving, transmitting, or scanning. -->
+  <item name="wifi.on">1.11</item>
+  <!-- Additional power used when transmitting or receiving over Wi-Fi. -->
+  <item name="wifi.active">73</item>
+  <!-- Additional power used when Wi-Fi is scanning for access points. -->
+  <item name="wifi.scan">0.3</item>
+
+    <array name="cpu.clusters.cores">
+        <value>4</value> <!-- Cluster 0 has 4 little cores (cpu0, cpu1, cpu2, cpu3) -->
+        <value>2</value> <!-- Cluster 1 has 2 big cores (cpu4, cpu5) -->
+        <value>2</value> <!-- Cluster 2 has 2 big cores (cpu6, cpu7) -->    
+    </array>
+
+    <!-- Different CPU speeds for cluster 0 as reported in
+       /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state.
+
+       There must be one of these for each cluster, labeled:
+       cpu.speeds.cluster0, cpu.speeds.cluster1, etc... -->
+    <array name="cpu.speeds.cluster0">
+        <value>408000</value>
+        <value>600000</value>
+        <value>816000</value>
+        <value>1008000</value>
+        <value>1200000</value>
+        <value>1416000</value>
+        <value>1608000</value>
+        <value>1800000</value>
+    </array>
+
+    <array name="cpu.speeds.cluster1">
+        <value>408000</value>
+        <value>600000</value>
+        <value>816000</value>
+        <value>1008000</value>
+        <value>1200000</value>
+        <value>1416000</value>
+        <value>1608000</value>
+        <value>1800000</value>
+        <value>2016000</value>
+        <value>2208000</value>
+        <value>2256000</value>
+        <value>2304000</value>
+        <value>2352000</value>
+        <value>2400000</value>         
+    </array>
+
+    <array name="cpu.speeds.cluster2">
+        <value>408000</value>
+        <value>600000</value>
+        <value>816000</value>
+        <value>1008000</value>
+        <value>1200000</value>
+        <value>1416000</value>
+        <value>1608000</value>
+        <value>1800000</value>
+        <value>2016000</value>
+        <value>2208000</value>
+        <value>2256000</value>
+        <value>2304000</value>
+        <value>2352000</value>
+        <value>2400000</value>         
+    </array>
+
+  <!-- Current at each CPU speed for cluster 0, as per 'cpu.speeds.cluster0'.
+       Like cpu.speeds.cluster0, there must be one of these present for
+       each heterogeneous CPU cluster. -->
+  <array name="cpu.core_power.cluster0">
+    <!-- Power consumption at different speeds -->
+        <value>30</value> <!-- 408000 -->
+        <value>42</value> <!-- 600000 -->
+        <value>53</value> <!-- 816000 -->
+        <value>64</value> <!-- 1008000 -->
+        <value>71</value> <!-- 1200000 -->
+        <value>82</value> <!-- 1416000 -->
+        <value>95</value> <!-- 1608000 -->
+        <value>108</value> <!-- 1800000 -->
+    </array>
+
+  <array name="cpu.core_power.cluster1">
+    <!-- Power consumption at different speeds -->
+        <value>137</value> <!-- 408000 -->
+        <value>146</value> <!-- 600000 -->
+        <value>164</value> <!-- 816000 -->
+        <value>176</value> <!-- 1008000 -->
+        <value>190</value> <!-- 1200000 -->
+        <value>201</value> <!-- 1416000 -->
+        <value>220</value> <!-- 1608000 -->
+        <value>235</value> <!-- 1800000 -->
+        <value>260</value> <!-- 2016000 -->
+        <value>291</value> <!-- 2208000 -->
+        <value>325</value> <!-- 2256000 -->
+        <value>373</value> <!-- 2304000 -->
+        <value>454</value> <!-- 2352000 -->
+        <value>533</value> <!-- 2400000 -->        
+    </array>
+
+  <array name="cpu.core_power.cluster2">
+    <!-- Power consumption at different speeds -->
+        <value>137</value> <!-- 408000 -->
+        <value>146</value> <!-- 600000 -->
+        <value>164</value> <!-- 816000 -->
+        <value>176</value> <!-- 1008000 -->
+        <value>190</value> <!-- 1200000 -->
+        <value>201</value> <!-- 1416000 -->
+        <value>220</value> <!-- 1608000 -->
+        <value>235</value> <!-- 1800000 -->
+        <value>260</value> <!-- 2016000 -->
+        <value>291</value> <!-- 2208000 -->
+        <value>325</value> <!-- 2256000 -->
+        <value>373</value> <!-- 2304000 -->
+        <value>454</value> <!-- 2352000 -->
+        <value>533</value> <!-- 2400000 -->        
+    </array>
+
+  <!-- Total power drawn by the system when CPUs (and the SoC) are in system suspend state. -->
+  <item name="cpu.idle">6.5</item>
+  <!-- Additional power used when CPUs are in scheduling idle state (kernel idle loop); system is not in system suspend state. -->
+  <item name="cpu.awake">15.68</item>
+  <!-- Power consumption when CPU is in power collapse mode. -->
+    <item name="cpu.suspend">5</item>
+
+  <!-- Power consumption when DDR is being used. -->
+  <array name="memory.bandwidths">
+    <value>22.7</value> <!-- mA for bucket: 100mb/s-1.5 GB/s memory bandwidth -->
+  </array>
+
+  <!-- This is the battery capacity in mAh (measured at nominal voltage) -->
+    <item name="battery.capacity">3700</item>
+</device>
